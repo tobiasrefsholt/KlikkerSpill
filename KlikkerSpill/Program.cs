@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Data;
+using KlikkerSpill;
 
-Console.WriteLine("Hello, World!");
+
+var game = new Game();
+
+while (true)
+{
+    ConsoleView.WriteMenu(game);
+    ConsoleView.HandleInput(game);
+}
